@@ -1,0 +1,1 @@
+this is the simple python project which analysis the text with basic operations

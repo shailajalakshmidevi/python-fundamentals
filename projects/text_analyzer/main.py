@@ -1,6 +1,9 @@
-from analyser import analyser
+from analyser import *
 
-text = "hello world"
+with open("sample.txt", "r") as file:
+    text = file.read()
+
+print("Text:", text)
 
 vowel_count, consonant_count, vowel_list, consonant_list, char_count, total_chars, words, words_length = analyser(text)
 
