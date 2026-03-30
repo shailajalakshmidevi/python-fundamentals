@@ -1,9 +1,18 @@
 from analyser import *
+import sys
 
-with open("sample.txt", "r") as file:
-    text = file.read()
+if len(sys.argv) <2:
+    
+     print("error")
+     exit()
+else:    
 
-print("Text:", text)
+     filename = sys.argv[1]
+     with open("sample.txt") as file:
+          text = file.read()
+     print("Text:", text)
+     print(filename)
+
 
 vowel_count, consonant_count, vowel_list, consonant_list, char_count, total_chars, words, words_length = analyser(text)
 
