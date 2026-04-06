@@ -38,12 +38,12 @@
 # age = int(input('enter the age: '))
 # nationality = input('enter the nationality: ')
 # if age >= 18:
-#     if nationality.upper() == 'INDIAN':
-#         print('the person eligible for indian citizenship')
-#     else:
-#         print('the person not eligible for indian citizenship')
+#      if nationality.lower()== 'indian':
+#          print('the person eligible for indian citizenship')
+#      else:
+#          print('the person not eligible for indian citizenship')
 # else:
-#     print('The age of person should be greater than or equal to 18')
+#      print('The age of person should be greater than or equal to 18')
 
 ## Wap to check the number is positive/negative and even/odd
 
@@ -80,6 +80,21 @@
 # username = 'abc_123'
 # password = '123_abc'
 
+usn = input('enter username :')
+pwd = input('enter password :')
+username = 'abc_123'
+password = '123_abc'
+
+if usn in username:
+     print ("valid instagram user")
+else:
+     print("invalid instauser")     
+     if pwd in password:
+          print("valid instagram user")
+     else:
+          print("invalid instagram user")
+
+                             
 
 
 

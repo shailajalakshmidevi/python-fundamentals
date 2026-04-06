@@ -16,7 +16,7 @@ for string in list_:
         if char in 'aeiouAEIOU':
             vowel += char
     out.append(vowel)
-# print(out)
+# print(out)e
 
 ## WAP TO GET THE FOLLOWING OUTPUT
 LIST_ = [123, 32, 31, 21]
@@ -27,11 +27,11 @@ for num in LIST_:
     for digit in str(num):     ## '123'
         sum_digit += int(digit)
     out.append(sum_digit)
-print(out)
+# print(out)
 
 ## WAP TO GET THE FOLLOWING OUTPUT
 list_ = [12, 5.6,'hello', 3, 'abc']
-# out = {12:144, 'hello':'h104e101l1o8l1o8o111', 3:9, 'abc':'a97b98c99'}
+out = {12:144, 'hello':'h104e101l1o8l1o8o111', 3:9, 'abc':'a97b98c99'}
 
 out = {}
 for element in list_:
@@ -39,10 +39,12 @@ for element in list_:
         out[element] = element ** 2
     elif type(element) == str:
         char_ascii = ''
-        for char in element:
-            char_ascii += char + str(ord(char))
-        out[element] = char_ascii
-print(out)
+    elif type(element)== float:
+        out[element] = element**2   
+for char in element:
+    char_ascii += char + str(ord(char))
+    out[element] = char_ascii
+#   print(out)
 
 # '' + 'h' + '104' ==> 'h104'
 # 'h104' + 'e' + '101' ==> 'h104e101'
@@ -51,9 +53,31 @@ print(out)
 In=['hello',227,3.4,'last',189,34]
 # Out=[722,981,43]
 
+oIn = ['hello', 227, 3.4, 'last', 189, 34]
+
+out = []
+
+for val in In:                 # Outer loop
+    if type(val) == int:
+        rev = ""
+        for digit in str(val): # Inner loop
+            rev = digit + rev  # reverse manually
+        out.append(int(rev))
+
+print(out)
+ 
 ## WAP TO GET THE FOLLOWING OUTPUT
 LIST_ = ['hAi', 'HEllO', 'GOod']
 # out: ['A', 'HEO', 'GO']
+out=[]
+for string in LIST_:
+    temp=''
+    for char in string:
+        if char.isupper():
+            temp += char
+    out.append(temp)  
+# print(out)
+
 
 
 

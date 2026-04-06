@@ -13,12 +13,12 @@
 ## the default value for start is 0 and default value for updation is 1
 ## the range() gets the integer values
 
-## WAP to print number from 0 to 10
+## WAP to print number from 0 to 11
 
-# for num in range(0, 10+1, 1):
-#     print(num)
+# for num in range(3, 20-2, 3):
+#         print(num)
 
-## WAP to print alternate number from 0 to 20
+# ## WAP to print alternate number from 0 to 20
 
 # for num in range(0, 21, 2):
 #     print(num)
@@ -30,18 +30,19 @@
 
 ## Take the string "Hello" get character and index position at same time using range()
 
-# string = 'Hello'
-# for index in range(len(string)):
-#     print(index, string[index])
+string = 'Hello'
+for index in range(len(string)):
+        length = len(string)
+        print(index,string[index],length)
 
 ## WAP TO EXTRACT ALL THE DIGITS FROM THE GIVEN STRING
 
-# string = input('enter the string: ')
-# new_string = ''
-# for char in string:
-#     if char.isdigit():
-#         new_string += char
-# print(new_string)
+string = input('enter the string: ')
+new_string = ''
+for char in string:
+        if char.isdigit():
+          new_string += char
+print(new_string)
 
 ##or
 
@@ -120,7 +121,7 @@
 # 'a4' + 'b' + '6' ==> 'a4b6'
 
 ## wap to get the following output
-string = 'aaaabbbbbbccd'
+# string = 'aaaabbbbbbccd'
 ## output: {'a':4 , 'b':6 , 'c':2 , 'd':1}
 
 # char_count = {}
@@ -151,7 +152,7 @@ string = 'aaaabbbbbbccd'
 # print(out)
 
 ## wap to get the following output
-string = 'aBBcDd@@7665&&LlDSs'
+# string = 'aBBcDd@@7665&&LlDSs'
 #output: 'AbbCdD@@7665&&lLdsS'
 
 # out = ''

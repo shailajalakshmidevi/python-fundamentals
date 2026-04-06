@@ -1,0 +1,493 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2639
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red255\green255\blue255;\red28\green172\blue149;\red238\green242\blue247;
+}
+{\*\expandedcolortbl;;\cssrgb\c100000\c100000\c100000;\cssrgb\c7843\c72157\c65098;\cssrgb\c94510\c96078\c97647;
+}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 What is python?\
+# 	It is high level and general purpose programming language.\
+\
+\
+# Features of python\
+\
+# 	1. It is easy to learn and code\
+# 	2. It is high level language\
+# 	3. It is free and open source\
+# 	4. It is platform independent\
+# 	5. It is dynamically typed language                  \
+# 	6. It is interpreted language\
+# 	7. The number of lines of code are less,  so efficiency increases\
+# 	8. It is having large library functions\
+\
+\
+# Library Functions: These are the functions which are already pre-defined by developers, which we can use in out code but we can't modify the functionalities.\
+\
+# 	There are 3 types\
+# 	1. Keywords\
+# 	2. Inbuilt functions\
+# 	3. Operators\
+\
+\
+# 	1. Keywords: these are reserved words  which are already pre-defined by developers, which we can use in out code but we can't modify the functionalities.\
+  \
+# Or\
+\
+# These are universal standard words\
+	\
+# Syntax:\
+\
+# Import keyword\
+# Keyword.kwlist\
+\
+\
+import keyword\
+print(keyword.kwlist)\
+\
+## True, False and None are the unique keywords\
+\
+a = True\
+print(a)\
+\
+b = False\
+print(b)\
+\
+# c = break\
+# print(c)\
+\
+## we can't use any keyword as value to variable except True, False, None\
+\
+# True = 90\
+# print(True)\
+\
+# break = 56\
+\
+## we can't use keywords as variable itself \
+\
+\
+## variables: it is the name given to memory location where the value is stored\
+## syntax:   var_name = value,  ex: a = 10\
+\
+# a = 200\
+# print(id(a))\
+\
+# a = 10\
+# print(a)\
+\
+# b = 200\
+# print(b)\
+\
+# a = 30\
+# print(a)\
+\
+\
+a = 100\
+print(id(a))\
+\
+b = 200\
+print(id(b))\
+\
+c = 100\
+print(id(c))\
+\
+## when two differnt variables have the same value then address of both the variable will be the same\
+\
+b = 500\
+print(id(b))\
+\
+\
+## when same variable asigned to the differnt values the previous address get deleted and latest willbe stored\
+\
+\
+a = 500\
+print(id(a))\
+\
+\
+\
+\
+\
+\
+\
+\
+ \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs20 \cf4 \cb3 \strokec4 Jul 21 - 8:56 pm
+\fs28 \cf2 \cb1 \strokec2 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 PYTHON \
+1.1 Introduction to Python.\
+	 \'95 Installation & Environment settings.\
+	 \'95 Introduction to Shell. \
+1.2 Variables, Keywords, Data types and rules of variables. \
+	\'95 Variables\
+	 \'95 Keywords\
+	 \'95 Data types\
+	 \'95 Rules of variables  \
+1.3 String, List, Set, Tuple and Dictionary and Slicing\
+	 \'95 String Data types\
+	 \'95 List Data types \
+	\'95 Set Data types \
+	\'95 Tuple Data types \
+	\'95 Dictionary Data types \
+	\'95 Slicing \
+1.4 Operators \
+	\'95 Arithmetic Operators\
+	\'95 Logical Operators \
+	\'95 Relational Operators \
+	\'95 Bitwise operators \
+	\'95 Assignment Operators\
+	 \'95 Membership Operators \
+	\'95 Identity Operators\
+ 1.5 Input and Print Statements \
+	\'95 Input statements \
+	\'95 Print statements \
+ 1.6 Control Statements \
+	\'95 Decisional Statements \
+	\'95 Looping Statements \
+	\'95 Break, Continue and Pass\
+1.7 Functions or Methods \
+	\'95 Types of Functions \
+	\'95 Arguments \
+	\'95 Packing and unpacking\
+1.8 Oops \
+	\'95 Class, Objects \
+	\'95 Inheritance \
+	\'95 Method Overriding \
+	\'95 Access Specifies \
+1.9 File Handling\
+	\'95 File Handling \
+1.10 Exception Handling \
+	\'95 Try\
+	\'95 Except and final \
+	\'95 Custom Exceptions \
+	\'95 Raising Exceptions \
+ 1.11 Comprehension \
+	\'95 List Comprehension\
+	\'95 Set Comprehension\
+	\'95 Dictionary Comprehension\
+1.12 Map, Filter and Lambda Expressions \
+1.13 Iterators,  Generators and Decorators\
+1.14 Regular Expression\
+1.15 Sql Connection\
+1.16 Json file handling\
+ \cb1 \
+\pard\pardeftab720\partightenfactor0
+
+\fs20 \cf4 \cb3 \strokec4 Jul 21 - 8:56 pm
+\fs28 \cf2 \cb1 \strokec2 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb3 \
+\
+a = 10\
+b = 20\
+c = 30\
+print(a, b, c)\
+print(id(a), id(b), id(c))\
+\
+## Multiple Variable Creation: it helps to create multiple variables in the single line\
+## syntax:  var1, var2,..... = val1, val2,.....\
+## note: the number of varibales should be equal to number of values\
+\
+a, b, c = 100, 200, 300\
+print(a, b, c)\
+\
+# a, b, c = 1,2\
+\
+# a, b, c = 1,2,3,4\
+\
+\
+## Rules for creating the variabels\
+\
+\
+##1. The keywords should not be used as variable\
+\
+a = True\
+print(a)\
+\
+# True = 1\
+\
+##2. variables should not start with numbers\
+\
+a2 = 40\
+print(a2)\
+\
+\
+a2b = 300\
+print(a2b)\
+\
+# 2a = 89\
+# print(2a)\
+\
+\
+##3. The variables should not begin with or have the space in between\
+\
+#  a=90\
+# print( a)\
+\
+\
+# a b = 90\
+# print(a b)\
+\
+\
+ab = 78\
+print(ab)\
+\
+\
+##4. the variables should not contain any specail char except underscore\
+\
+# a@ = 90\
+\
+# $b = 78\
+\
+\
+# a@b = 90\
+\
+a_ = 90\
+print(a_)\
+\
+\
+a_b = 90\
+print(a_b)\
+\
+_a = 90\
+print(_a)\
+\
+_ = 900\
+print(_)\
+\
+\
+##5. The variables can be alphabet(uppercase, lowercase, both) or alphanumeric\
+\
+aa = 900\
+print(aa)\
+\
+\
+AA = 900\
+print(AA)\
+\
+aB = 900\
+print(aB)\
+\
+a2 = 9000\
+print(a2)\
+\
+##6. According to ISR the length of the variable restricted to 32, even if it exceeds control will not throw any error\
+\
+hgfdertyuioiuytrdfgERTYUIOIUFDXCVBNHGFDertyu3456789876543tYUJHGFDRTYUJHGFCVBJHRY3456788trdfghbvcdtyu = 435456\
+print(hgfdertyuioiuytrdfgERTYUIOIUFDXCVBNHGFDertyu3456789876543tYUJHGFDRTYUJHGFCVBJHRY3456788trdfghbvcdtyu)\
+\
+\
+## Datatypes: it helps determine what type of value stored in the variable\
+\
+## it is classified into 2 types based on the size of the data\
+\
+\
+## Single value Datatypes : it stores single value wrt to one variable\
+\
+## there are types in SVD\
+\
+##1. Numeric\
+\
+## there are 3 types in Numeric Datatypes\
+\
+## Integer:\
+    ##1. The real numbers without decimals\
+    ##2. we can +ve or -ve number\
+    ##3. The default value is 0\
+\
+\
+var = 100\
+print(type(var))\
+print(type(100))\
+\
+a = -90\
+print(type(a))\
+print(type(0))\
+\
+##2. Float:\
+    ##1. The real numbers with decimals\
+    ##2. +ve or -ve\
+    ##3. the default value is 0.0\
+    \
+a = 9.8\
+print(type(a))\
+\
+a = -9.8\
+print(type(a))\
+print(type(0.0))\
+\
+##3. Complex :\
+    ##1. the complex nmnber is represented as a + bj or a - bj\
+    ##2. a is real part b is imaginary part\
+    ##3. the value for a and b can either be int or Float\
+    ##4. The default value is 0j\
+    \
+c = 5 + 9j\
+print(type(c))\
+\
+c = 5.8 + 9j\
+print(type(c))\
+\
+c = 5.6 + 9.5j\
+print(type(c))\
+\
+c = -5 - 9j\
+print(type(c))\
+\
+print(c)\
+\
+# c = -5 - 9i\
+# print(type(c))\
+\
+c = -5 - 9J\
+print(type(c))\
+print(c)\
+\
+print(type(0j))\
+\
+##2. Boolean: True and False\
+\
+## these values are used in 2 cases\
+\
+##1. we can use it as value to any variable\
+\
+a = True\
+b = False\
+print(type(a), type(b))\
+\
+##2. it is used as resultant to check the condition\
+\
+print(1 > 6)\
+print(100 < 400)\
+\
+print(bool(0))          ## Always the default values are internally boolean False and non-default value is internally boolean True\
+print(bool(3))\
+\
+print(bool(0.0))\
+print(bool(8.0))\
+\
+print(bool(0j))\
+\
+\
+\
+\
+## Multi value Datatypes(collection type): it stores multiple values wrt to one variable\
+\
+## there are 5types\
+\
+##1. String Datatypes\
+##2. List Datatypes\
+##3. Tuple Datatypes\
+##4. Set Datatypes\
+##5. Dictionay Datatypes\
+\
+\
+## String Datatypes: it is the collection of character(alphabets, numbers or special character) enclosed between pair os single or double or triple quotes\
+\
+## syntax;\
+\
+var = 'val1val2,.....'\
+\
+# or\
+\
+var = "val1val2,...."\
+\
+##or\
+\
+var = '''val1val2,,,'''\
+\
+\
+string = 'hello123$%^'\
+print(type(string))\
+print(string)\
+\
+\
+string = "hello123$%^"\
+print(string)\
+\
+string = '''hello123$%^'''\
+print(string)\
+\
+\
+# string = 'this is world's best place'\
+\
+\
+string = 'this is world\\'s best place'         ## this is not pythonic way\
+print(string)\
+\
+\
+string = "this is world's best place"\
+print(string)\
+\
+# sentence = 'hello good evening\
+# how are you'\
+\
+# sentence = "hello good evening\
+# how are you"\
+\
+sentence = '''hello good evening\
+how are you'''\
+print(sentence)\
+\
+\
+string = 'hello'\
+print(len(string))                ## len(): it helps to get the number of characters present in the string\
+print(len('hello'))\
+string1 = 'jhgre876545678REDFGHJR$%^&*(&^%$#WSDFTGHBVC Byt543456789876543ertyhgbvbnvcfdrtyuiy#$%^&YTRFDVB'\
+print(len(string1))\
+\
+\
+## to customize the string\
+\
+name = 'Sonu'\
+age = 23\
+\
+## Hello myself Sonu of age 23 years\
+\
+\
+print('Hello myself Sonu of age 22 years')\
+\
+##1. f-string\
+\
+print(f'Hello myself \{name\} of age \{age\} years')\
+\
+age = 25\
+\
+print(f'Hello myself \{name\} of age \{age\} years')\
+\
+\
+# print(f'Hello myself \{name\} of age \{age\} years from \{place\}')\
+\
+## format attribute\
+\
+print('Hello myself \{\} of age \{\} years'.format(name, age))\
+print('Hello myself \{\} of age \{\} years'.format(age, name))\
+\
+\
+string = 'python'\
+print(string)\
+\
+## variable[index]\
+\
+print(string[1])\
+\
+print(string[4])\
+\
+print(string[-1])\
+\
+## +ve_index = len(collection) + (-ve_index)\
+\
+# 6 + (-1)\
+# 5\
+\
+print(string[5])\
+\
+\
+print(dir(string))\
+}

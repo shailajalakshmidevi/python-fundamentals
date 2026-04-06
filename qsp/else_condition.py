@@ -22,11 +22,11 @@
 
 # string = input('enter the string: ')
 # if len(string) % 2 != 0:
-#     print('the given string having a middle character')
+#      print('the given string having a middle character')
 # else:
 #     print('the given string not having a middle character')
 
-## wap to check the two variables having integer values are pointing to same address or not
+# ## wap to check the two variables having integer values are pointing to same address or not
 
 # num1 = int(input('enter the number1: '))
 # num2 = int(input('enter the number2: '))
@@ -55,11 +55,11 @@
 ## wap to check the first charcater in the string is uppercase or not,
 # if uppercase get the reversed string else get the string as is
 
-# string = input('enter the string: ')
-# if string[0].isupper():
-#     print(string[::-1])
-# else:
-#     print(string)
+string = input('enter the string: ')
+if string[0].isupper():
+    print(string[::-1])
+else:
+    print(string)
 
 ##  wap to check the last digit of the integer number is divisible by 3 or not
 
@@ -87,6 +87,14 @@
 #     print('hello')
 
 ## wap to check two variables are pointing to different address or not
+num1 = int(input("enter the var"))
+num2 = int(input("enter the var"))
+if num1 is not num2:
+    print("pointing to diff address ")
+else:
+    print("same address")
+
+
 
 ## wap to check the given data is collection type or not
 
