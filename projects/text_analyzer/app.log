@@ -1,0 +1,7 @@
+2026-04-12 10:36:57,678 - WARNING - No filename provided
+2026-04-12 10:37:11,322 - INFO - Opening file: sample.txt
+2026-04-12 10:37:11,322 - INFO - File read successfully
+2026-04-12 10:44:04,196 - WARNING - No filename provided
+2026-04-12 10:44:10,314 - INFO - Opening file: sample.txt
+2026-04-12 10:44:10,314 - INFO - File read successfully
+2026-04-12 10:44:10,314 - INFO - Analysis completed successfully
