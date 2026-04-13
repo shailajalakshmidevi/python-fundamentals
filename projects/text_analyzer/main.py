@@ -1,7 +1,7 @@
 import sys
 import logging
 from analyser import analyser
-# 🔹 Logging setup
+
 logging.basicConfig(
     filename='app.log',
     level=logging.INFO,
@@ -10,35 +10,35 @@ logging.basicConfig(
 
 
 if len(sys.argv) < 2:
-    print("Usage: python3 main.py <filename>")
+    print("Usage: python3 main.py <file1>,<file2> ....")
     logging.warning("No filename provided")
     exit()
 
-filename = sys.argv[1]
+for filename in sys.argv[1:]:
 
-try:
-    logging.info(f"Opening file: {filename}")
+    try:
+        logging.info(f"Opening file: {filename}")
 
-    with open(filename, "r") as file:
-        text = file.read()
+        with open(filename, "r") as file:
+             text = file.read()
+        print(f"\n    File: {filename}")
 
-    print("Text:", text)
-    logging.info("File read successfully")
+        print("Text:", text)
+        
 
-    v_count, c_count, v_list, c_list, freq, total_chars, words, total_words = analyser(text)
-    print("\nTotal vowels =", v_count)
-    print("Vowels =", v_list)
+        v_count, c_count, v_list, c_list, freq, total_chars, words, total_words = analyser(text)
+        print("\nTotal vowels =", v_count)
+        print("Vowels =", v_list)
 
-    print("\nTotal consonants =", c_count)
-    print("Consonants =", c_list)
+        print("\nTotal consonants =", c_count)
+        print("Consonants =", c_list)
 
-    print("\nTotal words =", total_words)
-    print("Words =", words)
+        print("\nTotal words =", total_words)
+        print("Words =", words)
 
-    print("\nCharacter frequency =", freq)
+        print("\nCharacter frequency =", freq)
 
-    logging.info("Analysis completed successfully")
-
-except FileNotFoundError:
-    print("Error: File not found")
-    logging.error(f"File not found: {filename}")
+        logging.info(f"File read successfully:{filename}")
+    except FileNotFoundError:
+        print("Error: File not found")
+        logging.error(f"File not found: {filename}")
